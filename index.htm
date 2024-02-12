@@ -34,7 +34,30 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      width: 100%; /* Adjusted for smaller screens */
       max-width: 100%;
+    }
+
+    @media screen and (max-width: 800px) {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 1em;
+      }
+      .image {
+        margin-top: 20px;
+        width: 50%; /* Making the image 50% smaller on small screens */
+      }
     }
   </style>
 </head>
