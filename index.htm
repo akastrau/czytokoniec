@@ -11,26 +11,36 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
     .container {
       width: 80%;
       text-align: center;
     }
     h1 {
-      font-size: 48px;
+      font-size: 3em;
       text-transform: uppercase;
       letter-spacing: 6px;
     }
     p {
-      font-size: 24px;
+      font-size: 1.5em;
       line-height: 1.6;
     }
     .image {
-      margin-top: 50px;
+      margin-top: 30px;
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 50%;
+      max-width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+      .image {
+        width: 50%; /* Making the image 50% smaller on small screens */
+      }
     }
   </style>
 </head>
@@ -39,7 +49,7 @@
     <h1>KONIEC ELDORADO</h1>
     <p>Witaj na stronie poświęconej motywowi przewodniemu "KONIEC ELDORADO". Oto miejsce, gdzie historia spotyka się z legendą.</p>
     <div class="image">
-      <img src="eldorado.jpg" alt="Eldorado">
+      <img src="eldorado.jpg" alt="Eldorado" width="100%">
     </div>
     <p>Odwiedź nas ponownie wkrótce, aby odkrywać tajemnice Eldorado!</p>
     <p>&copy; 1990-2024 KONIEC ELDORADO. Wszelkie prawa zastrzeżone.</p>
